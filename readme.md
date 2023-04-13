@@ -7,13 +7,16 @@ This is a custom build for the Rev3 GMMK1 iso full size board, with the followin
 1) Bug fix: use correct LED layout for full size ISO board
 2) Bug fix: Update quantum/quantum_keycodes.h from the sn32_master so that RGB_ codes are correct
 3) Enable mousekeys
-4) Replace the scroll lock light so that it comes on when layer 2 is active.   I use layer for mousekeys on the numpad using VIA.
+4) Replace the scroll lock light so that it comes on when layer 2 is active.   I use layer 2 for mousekeys on the numpad using VIA.
 
 This firmware does not have hybrid OpenRGB support.  I'm not hugely fussed, and didn't like the modal VIA that the hybrid firmware uses.
 
 To make
 
     make gmmk/full/rev3:via
+
+The gmmk_full_iso_layout.json file contains the VIA setup I use to (among other things) enable mouse keys on layer 2.  You will need to load 
+the custom layout file from keyboards/gmmk/full/VIA_gmmk_full_iso.json in VIA's developer tab to get it to recognise the keyboard.
 
 I have forced ISO layout so that lighting would be correct in VIA builds.  This is not the right way to do this.  I do not knwo the right way.
 For ANSI builds, just remove the relevant #define from keyboards/gmmk/full/config_led.h/config.h.
