@@ -72,3 +72,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
 
     return true;
 }
+
+
+void keyboard_pre_init_user(void) {
+    setPinOutput(C8);  
+}
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    if(IS_LAYER_ON_STATE(state, 2)) { 
+        writePinLow(C8); 
+    } 
+    else { 
+        writePinHigh(C8); 
+    } 
+    return state; 
+}

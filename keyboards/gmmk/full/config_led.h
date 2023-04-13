@@ -14,6 +14,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 // Backlight configuration
+
+#define KEYMAP_ISO 1
 #define BACKLIGHT_LEVELS 8
 
 #define LED_MATRIX_ROWS 7
@@ -41,4 +43,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LED_PIN_ON_STATE    0
 #define LED_NUM_LOCK_PIN    C6
 #define LED_CAPS_LOCK_PIN   C7
-#define LED_SCROLL_LOCK_PIN C8
+/*#define LED_SCROLL_LOCK_PIN C8*/
