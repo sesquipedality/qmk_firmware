@@ -1,5 +1,25 @@
 # Quantum Mechanical Keyboard Firmware
 
+This is the sesquipedality fork of sonix_qmk.  Modifications are made to the "sn32" branch.
+
+This is a custom build for the Rev3 GMMK1 iso full size board, with the following changes
+
+1) Bug fix: use correct LED layout for full size ISO board
+2) Bug fix: Update quantum/quantum_keycodes.h from the sn32_master so that RGB_ codes are correct
+3) Enable mousekeys
+4) Replace the scroll lock light so that it comes on when layer 2 is active.   I use layer for mousekeys on the numpad using VIA.
+
+This firmware does not have hybrid OpenRGB support.  I'm not hugely fussed, and didn't like the modal VIA that the hybrid firmware uses.
+
+To make
+
+    make gmmk/full/rev3:via
+
+I have forced ISO layout so that lighting would be correct in VIA builds.  This is not the right way to do this.  I do not knwo the right way.
+For ANSI builds, just remove the relevant #define from keyboards/gmmk/full/config_led.h/config.h.
+
+# Original docs
+
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
 [![Build Status](https://travis-ci.org/qmk/qmk_firmware.svg?branch=master)](https://travis-ci.org/qmk/qmk_firmware)
 [![Discord](https://img.shields.io/discord/440868230475677696.svg)](https://discord.gg/Uq7gcHh)
