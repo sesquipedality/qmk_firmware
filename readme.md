@@ -1,3 +1,12 @@
+# Keychron QMK custom build
+
+This fork contains a custom build for the Keychron Q6 ISO variant (VIA keymap).  It adds an extra layer, and lights 
+up the Numlock key purple when that layer is active.  By default the layer has mouse keys on the num pad, and Num Lock 
+turns the layer on and off.
+
+Normal numluck function is preserved using Fn+NumLock (but is ineffective when the mouse keys layer is turned 
+on.  THis may be of use to absolutely no-one except me, but here it is.
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)

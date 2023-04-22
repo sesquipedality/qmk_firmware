@@ -16,6 +16,8 @@
 
 #pragma once
 
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
+
 /* Key matrix size */
 #define MATRIX_ROWS 6
 #define MATRIX_COLS 20
