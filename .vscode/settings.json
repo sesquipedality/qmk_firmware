@@ -26,7 +26,9 @@
     },
     "python.formatting.provider": "yapf",
     "[json]": {
-	    "editor.formatOnSave": false
     },
-    "cmake.sourceDirectory": "/home/christi/keychron_qmk_firmware/lib/googletest"
+    "cmake.sourceDirectory": "/home/christi/keychron_qmk_firmware/lib/googletest",
+    "clangd.arguments": [
+        "--header-insertion=never"
+    ]
 }
