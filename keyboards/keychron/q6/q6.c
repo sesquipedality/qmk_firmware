@@ -83,7 +83,7 @@ bool rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max) {
 #    endif // CAPS_LOCK_LED_INDEX
 #    if defined(NUM_LOCK_LED_INDEX)
     if ( IS_LAYER_ON(4) ) {
-        RGB_MATRIX_INDICATOR_SET_COLOR(NUM_LOCK_LED_INDEX, 255, 1, 255);
+        RGB_MATRIX_INDICATOR_SET_COLOR(NUM_LOCK_LED_INDEX, 0x74, 0x5b, 0x95); /* Should be a good match for SE purple - was 255, 1 , 255*/
     } else if (host_keyboard_led_state().num_lock) {
         RGB_MATRIX_INDICATOR_SET_COLOR(NUM_LOCK_LED_INDEX, 255, 255, 255);
     } else {
