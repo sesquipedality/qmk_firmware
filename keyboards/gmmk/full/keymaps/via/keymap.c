@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                         KC_TRNS,    GUI_LOCK,   KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    RGB_HUD,    RGB_VAD,        RGB_VAI,        RGB_HUI,    KC_TRNS,    KC_TRNS,    KC_TRNS,            KC_TRNS,
                         KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    RGB_M_B,    RGB_M_R,    RGB_M_SW,   RGB_MOD,    RGB_RMOD,       KC_VOLD,        KC_VOLU),
     [_L2] = {[0 ... MATRIX_ROWS - 1] = {[0 ... MATRIX_COLS - 1] = KC_TRNS}},
-    [_L3] = {[0 ... MATRIX_ROWS - 1] = {[0 ... MATRIX_COLS - 1] = KC_TRNS}}
+//    [_L3] = {[0 ... MATRIX_ROWS - 1] = {[0 ... MATRIX_COLS - 1] = KC_TRNS}}
 };
 
 void matrix_init_user(void)
